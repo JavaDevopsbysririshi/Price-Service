@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1"/>
+<title>Pricing List</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"/>
+
+</head>
+<body>
+<h1>PRICING</h1>
+<table class="table table-striped">
+<tr>
+<th>PRICE ID</th>
+<th>PRODUCT ID</th>
+<th>PRODUCT NAME</th>
+<th>PRICE</th>
+<th>ACTIONS</th>
+</tr>
+<tr th:each="pricing:${pricingDetails}">
+<td th:utext="${pricing.priceId}"></td>
+<td th:utext="${pricing.productId}"></td>
+<td th:utext="${pricing.productName}"></td>
+<td th:utext="${pricing.price}"></td>
+
+<td><a th:href="@{/delete/{productId}(productId=${pricing.productId})}" class="btn btn-danger">DELETE</a></td>
+</tr>
+</table>
+
+
+
+<a href="/add" class="btn btn-success">ADD PRICING</a>
+<a href="/search" class="btn btn-success">SEARCH PRICING</a>
+
+</body>
+</html>

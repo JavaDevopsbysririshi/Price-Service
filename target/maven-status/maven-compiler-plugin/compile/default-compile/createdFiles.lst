@@ -1,0 +1,8 @@
+com\meru\ecommerce\price\priceservice\service\PriceServiceImpl.class
+com\meru\ecommerce\price\priceservice\web\PriceController.class
+com\meru\ecommerce\price\priceservice\entity\Price.class
+com\meru\ecommerce\price\priceservice\dao\PriceRepository.class
+com\meru\ecommerce\price\priceservice\entity\Product.class
+com\meru\ecommerce\price\priceservice\PriceServiceApplication.class
+com\meru\ecommerce\price\priceservice\service\PriceService.class
+com\meru\ecommerce\price\priceservice\entity\ProductDescription.class
